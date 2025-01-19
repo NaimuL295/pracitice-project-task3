@@ -1,8 +1,6 @@
 *{
 margin: 0;
 }
-
-
 .poppins-regular {
   font-family: "Poppins", serif;
   font-weight: 400;
@@ -30,10 +28,8 @@ body{
   display: flex;
 }
 /* .hover-btn:hover{
-
 } */
 .navbar{
-
   max-width:1240px ;
   /* margin:30px auto ; */
   justify-content: space-between;
@@ -46,18 +42,16 @@ body{
   font-weight: 400;
 }
 .navbar a{
-  
    text-decoration: none; 
    color:var(--darkColor); 
 }
 .navbar>i{
 display: none;
 }
-
 .navbar,.banner-container{
   max-width:1240px ;
   margin: 40px auto ;
- 
+
 }
 .banner-text-container{
  max-width: 582px;
@@ -90,13 +84,19 @@ background-position: center;
 object-fit: cover;
 background-size: cover;
 }
-.banner-imge img{
+.banner-imge >img{
   width: 100%;
+  cursor: pointer;
+  transition: 5s ease-in-out;
+}
+.banner-imge  :hover{
+  transform: rotate(-180deg);
 }
 main> section{
   max-width: 1440px;
   margin: 0 auto;
 }
+
 /* section{
   margin-top:150px;
 } */
@@ -142,6 +142,7 @@ padding:8px;
   text-align:right;
   color: var(--btnBackground);
   margin: 100px   ;
+  cursor: pointer;
 }
 /* featured-products */
 .featured-products{
@@ -160,6 +161,7 @@ width: 50%;
   padding: 10px 24px 10px 24px; 
 background-color: var(--btnBackground);
 color:var(--btnColor) ;
+border: none;
 }
 .featured-text-title{
  font-size:2rem;
@@ -182,7 +184,6 @@ text-align: center;
 .Influencer-title{
   font-size:1.5rem;
 }
-
 /*    responsive device   */
 @media screen and (max-width:576px) {
   /* .navbar,
@@ -194,7 +195,6 @@ gap:20px ;
 text-align: center;
   }
 /*  */
-
 .nav-link {
   display: none;
 }
@@ -202,7 +202,6 @@ text-align: center;
 display:inline-block;
 padding: 0 20px;
 }
-
 /*  */
   .banner-container{
     flex-direction: column-reverse;
