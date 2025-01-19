@@ -22,7 +22,7 @@ body{
 --btnBackground: rgb(224, 44, 109);
 --featuredtextColor:rgb(108, 108, 108) ;      
   --footerColor: rgba(10, 8, 38, 1); 
-  
+  --itmeText:rgba(120, 120, 133, 1);
 }
 .display-flex{
   display: flex;
@@ -51,7 +51,6 @@ display: none;
 .navbar,.banner-container{
   max-width:1240px ;
   margin: 40px auto ;
-
 }
 .banner-text-container{
  max-width: 582px;
@@ -60,9 +59,7 @@ display: none;
 /* .banner-container */
 .banner-container{
 justify-content: space-between;
-
 }
-
 .banner-title{
   font-size:3.2rem ;
   font-weight: 700;
@@ -96,7 +93,6 @@ main> section{
   max-width: 1440px;
   margin: 0 auto;
 }
-
 /* section{
   margin-top:150px;
 } */
@@ -136,6 +132,11 @@ padding:8px;
   font-weight: 500;
   margin: 0;
 }
+.Wordwide{
+font-size: 1.1rem;
+color:  var( --itmeText ) ;
+}
+
 /* right-icon */
 
 .right-icon{
@@ -209,8 +210,13 @@ padding: 0 20px;
   .featured-products{
   flex-direction: column-reverse;
   }
+  .banner-title{
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+  }
   .banner-text-container{
     margin-bottom: 200px;
+ 
   }
   .ecommerce-item{
     gap: 20px;
