@@ -24,7 +24,6 @@ body{
   --footerColor: rgba(10, 8, 38, 1); 
   --itmeText:rgba(120, 120, 133, 1);
   --starColor:rgb(251, 130, 0);
-
 }
 .display-flex{
   display: flex;
@@ -103,7 +102,7 @@ main> section{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-gap: 95px;
+gap: 5vw;
 }
 /* .ecommerce-item>img{
 } */
@@ -112,7 +111,7 @@ gap: 95px;
   margin: 20px;
 }
 .Popular-collection-img{
-  gap: 100px;
+  gap:8vw;
 align-items: center;
 justify-content: center;
 }
@@ -132,7 +131,6 @@ padding:8px;
 .Flex-Tripod{
   font-size: 1.8rem;
   font-weight: 500;
-  margin: 0;
 }
 .Wordwide{
 font-size: 1.1rem;
@@ -142,7 +140,6 @@ color:  var( --itmeText ) ;
 color: var(--starColor);
 }
 .stars{
-
 color: var(--starColor);
 }
 /* right-icon */
@@ -150,11 +147,12 @@ color: var(--starColor);
 .right-icon{
   text-align:right;
   color: var(--btnBackground);
-  margin: 100px   ;
+margin: 10vh;
   cursor: pointer;
 }
 /* featured-products */
 .featured-products{
+  margin-bottom:7vw;
   justify-content: space-around;
 }
 .featured-img img{
@@ -171,20 +169,19 @@ width: 50%;
 background-color: var(--btnBackground);
 color:var(--btnColor) ;
 border: none;
+margin:2vh ;
 }
 .featured-text-title{
  font-size:2rem;
  font-weight:700;
 }
-
 /* footer */
 footer{  
-  margin: 0 0;
   color: var(--btnColor);
   background-color: var(--footerColor);
 }
 .footer{
-  height:211px ;
+ height:211px ;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -194,7 +191,7 @@ text-align: center;
   font-size:1.5rem;
 }
 /*    responsive device   */
-@media screen and (max-width:576px) {
+@media  only screen and (max-width:576px) {
   /* .navbar,
   .nav-link, */
   .banner-container
@@ -223,8 +220,7 @@ padding: 0 20px;
     padding-bottom: 10px;
   }
   .banner-text-container{
-    margin-bottom: 200px;
- 
+    margin-bottom:5vh ;
   }
   .ecommerce-item{
     gap: 20px;
@@ -233,9 +229,6 @@ padding: 0 20px;
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-  }
-  .Flex-Tripod>br{
-    display: none;
   }
   .right-icon{
    display: flex;
@@ -246,13 +239,19 @@ padding: 0 20px;
     width:100%;
     gap: 20px;
   }
-
 }
-@media screen and (min-width:576px) and (max-width:992px){
+@media   only  screen and (min-width:576px) and (max-width:992px){
 
 
   .featured-products{
   flex-direction: column-reverse;
+  }
+
+  .ecommerce-item{
+    margin-top: 20vh;
+  }
+  .Popular-collection-img{
+ margin: 2vh;
   }
   .featured-text{
     width:100%;
