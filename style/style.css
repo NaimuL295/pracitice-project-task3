@@ -23,6 +23,8 @@ body{
 --featuredtextColor:rgb(108, 108, 108) ;      
   --footerColor: rgba(10, 8, 38, 1); 
   --itmeText:rgba(120, 120, 133, 1);
+  --starColor:rgb(251, 130, 0);
+
 }
 .display-flex{
   display: flex;
@@ -136,7 +138,13 @@ padding:8px;
 font-size: 1.1rem;
 color:  var( --itmeText ) ;
 }
+.star{
+color: var(--starColor);
+}
+.stars{
 
+color: var(--starColor);
+}
 /* right-icon */
 
 .right-icon{
@@ -238,6 +246,7 @@ padding: 0 20px;
     width:100%;
     gap: 20px;
   }
+
 }
 @media screen and (min-width:576px) and (max-width:992px){
 
@@ -245,16 +254,10 @@ padding: 0 20px;
   .featured-products{
   flex-direction: column-reverse;
   }
-
   .featured-text{
     width:100%;
 text-align:center;
 margin-bottom: 50px;
   }
-
-
-
-
-
 }
 
